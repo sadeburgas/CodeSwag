@@ -1,7 +1,8 @@
-package bg.sade.codeswag
+package bg.sade.codeswag.Controller
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import bg.sade.codeswag.R
 
 class MainActivity : AppCompatActivity() {
 
