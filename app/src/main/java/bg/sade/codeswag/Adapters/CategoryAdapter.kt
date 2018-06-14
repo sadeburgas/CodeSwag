@@ -11,10 +11,7 @@ import bg.sade.codeswag.Model.Category
 import bg.sade.codeswag.R
 
 
-class CategoryAdapter(context: Context, category: List<Category>) : BaseAdapter() {
-
-    val context = context
-    val category = category
+class CategoryAdapter(val context: Context, val category: List<Category>) : BaseAdapter() {
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
         val categoryView: View
