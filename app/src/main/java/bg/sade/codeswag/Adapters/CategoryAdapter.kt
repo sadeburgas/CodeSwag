@@ -25,13 +25,11 @@ class CategoryAdapter(context: Context, category: List<Category>) : BaseAdapter(
             holder = ViewHolder()
             holder.categoryImage = categoryView.findViewById(R.id.categoryImage)
             holder.categoryName = categoryView.findViewById(R.id.categoryName)
-            println("I exist for the first time")
 
             categoryView.tag = holder
         } else { //reusing
             holder = convertView.tag as ViewHolder
             categoryView = convertView
-            println("Go green, recycle!")
         }
 
         val categoty = category[position]
